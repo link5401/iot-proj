@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="dashboard.android.MainActivity">
+
+    <TextView
+        android:id="@+id/Temperature"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/gradientbox"
+
+
+        android:gravity="center"
+        android:text="35°C"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="10%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="35%" />
+
+    <TextView
+
+        android:id="@+id/Humid"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/gradientbox"
+
+        android:gravity="center"
+        android:text="80%"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="50%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="35%" />
+    <TextView
+
+        android:id="@+id/TogglePush"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/gradientbox"
+        android:gravity="center"
+        android:text="OFF"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="33%"
+        app:layout_marginTopPercent="45%"
+        app:layout_widthPercent="30%" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TogglePush"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:layout_heightPercent="15%"
+        app:layout_marginStartPercent="50%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="35%"
+        android:background="@drawable/toggle_selector"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+
+    <ImageView
+
+        android:id="@+id/temp_icon"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tempicon"
+        android:scaleType="fitCenter"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="10%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="35%" />
+    <ImageView
+
+        android:id="@+id/humid_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/humid_icon"
+        android:scaleType="fitCenter"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="50%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="35%" />
+    <!--<com.github.mikephil.charting.charts.LineChart-->
+        <!--android:id="@+id/lineChart"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+</android.support.percent.PercentRelativeLayout>

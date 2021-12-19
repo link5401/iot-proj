@@ -1,0 +1,9 @@
+*.iml
+.gradle
+first-android-proj/local.properties
+first-android-proj/.idea/workspace.xml
+first-android-proj/.idea/libraries
+first-android-proj/.DS_Store
+first-android-proj/build
+first-android-proj/captures
+first-android-proj/.externalNativeBuild
